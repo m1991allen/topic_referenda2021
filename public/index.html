@@ -1,17 +1,110 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="icon" href="https://cdn.ftvnews.com.tw/client/images/favicons/favicon.ico" />
+        <title>【四大公投】1218公投題目、政黨立場、正反意見一次看｜民視數位專題｜資訊懶人包</title>
+        <meta
+            property="og:title"
+            content="【四大公投】1218公投題目、政黨立場、正反意見一次看｜民視數位專題｜資訊懶人包"
+        />
+        <meta
+            property="og:site_name"
+            content="【四大公投】1218公投題目、政黨立場、正反意見一次看｜民視數位專題｜資訊懶人包"
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:url" content="https://www.ftvnews.com.tw/topics/referenda2021/index.html" />
+        <meta property="og:image" content="https://www.ftvnews.com.tw/topics/referenda2021/cover.png" />
+        <meta property="og:image:width" content="563" />
+        <meta property="og:image:height" content="296" />
+        <meta
+            property="og:description"
+            content="「重啟核四」、「反萊豬進口」、「公投綁大選」、「三接遷離」，2021全國性公投案將於12月18日登場。四大公投爭議點是什麼？各政黨立場又是如何？民視新聞網彙整數位專題懶人包，提供各方資訊彙整、公投知識小測驗、當天即時開票與結果呈現。"
+        />
+        <meta property="fb:app_id" content="157389381527660" />
+        <!-- <meta name="robots" content="noindex" /> -->
+    </head>
+    <body>
+        <noscript>
+            <strong
+                >We're sorry but 【四大公投】1218公投題目、政黨立場、正反意見一次看｜民視數位專題｜資訊懶人包 doesn't
+                work properly without JavaScript enabled. Please enable it to continue.</strong
+            >
+        </noscript>
+        <div id="app"><i class="far fa-bars"></i></div>
+        <!-- built files will be auto injected -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101119806-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'UA-101119806-1')
+        </script>
+
+        <!-- axios -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+            integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/60a0584099.js" crossorigin="anonymous"></script>
+
+        <!-- facebook social share link setting-->
+        <div id="fb-root"></div>
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v12.0&appId=1854261788223985&autoLogAppEvents=1"
+            nonce="y8H4SIlK"
+        ></script>
+
+        <!-- infogram -->
+        <script>
+            !(function (e, i, n, s) {
+                var t = 'InfogramEmbeds',
+                    d = e.getElementsByTagName('script')[0]
+                if (window[t] && window[t].initialized) window[t].process && window[t].process()
+                else if (!e.getElementById(n)) {
+                    var o = e.createElement('script')
+                    ;(o.async = 1),
+                        (o.id = n),
+                        (o.src = 'https://e.infogram.com/js/dist/embed-loader-min.js'),
+                        d.parentNode.insertBefore(o, d)
+                }
+            })(document, 0, 'infogram-async')
+        </script>
+
+        <!-- Hotjar Tracking Code for https://www.ftvnews.com.tw/topics/referenda2021/ -->
+        <!-- Hotjar Tracking Code for https://www.ftvnews.com.tw/topics/referenda2021/#/ -->
+        <script>
+            ;(function (h, o, t, j, a, r) {
+                h.hj =
+                    h.hj ||
+                    function () {
+                        ;(h.hj.q = h.hj.q || []).push(arguments)
+                    }
+                h._hjSettings = { hjid: 2740085, hjsv: 6 }
+                a = o.getElementsByTagName('head')[0]
+                r = o.createElement('script')
+                r.async = 1
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv
+                a.appendChild(r)
+            })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=')
+        </script>
+
+        <!-- typeform -->
+        <script src="https://embed.typeform.com/embed.js"></script>
+    </body>
 </html>
