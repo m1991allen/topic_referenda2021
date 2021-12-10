@@ -4,12 +4,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+
 import Hotjar from 'vue-hotjar'
-
 import VueGtag from 'vue-gtag'
-
-import Analytics from 'analytics'
-import googleAnalytics from '@analytics/google-analytics'
 
 Vue.config.productionTip = false
 
@@ -21,7 +18,7 @@ new Vue({
 
 // Hotjar
 Vue.use(Hotjar, {
-    id: '2740085', // Hotjar Site ID
+    id: '2714566', // Hotjar Site ID
     isProduction: true,
     snippetVersion: 6,
 })
@@ -36,13 +33,15 @@ Vue.use(VueGtag, {
     },
 })
 
+// import Analytics from 'analytics'
+// import googleAnalytics from '@analytics/google-analytics'
 // Analytics
-const analytics = Analytics({
-    app: 'App',
-    plugins: [
-        googleAnalytics({
-            trackingId: 'UA-101119806-1',
-        }),
-    ],
-})
-analytics.page()
+// const analytics = Analytics({
+//     app: 'App',
+//     plugins: [
+//         googleAnalytics({
+//             trackingId: 'UA-101119806-1',
+//         }),
+//     ],
+// })
+// analytics.page()

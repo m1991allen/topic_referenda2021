@@ -32,6 +32,14 @@ export default {
         }
     },
 
+    methods: {
+        keepVoting() {
+            setInterval(() => {
+                this.$store.commit('vote')
+            }, 30000)
+        },
+    },
+
     computed: {
         // 存於store的陣列votes
         voting() {
@@ -41,6 +49,7 @@ export default {
 
     mounted() {
         this.$store.commit('vote')
+        this.keepVoting()
     },
 }
 </script>

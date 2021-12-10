@@ -9,8 +9,8 @@ export default new Vuex.Store({
             {
                 no: '17',
                 title: '重啟核四',
-                vote_agree: 1,
-                vote_disagree: 1,
+                vote_agree: 100010,
+                vote_disagree: 1000000,
                 isPass: false,
                 noPass: false,
             },
@@ -48,25 +48,20 @@ export default new Vuex.Store({
                 .get('https://www.ftvnews.com.tw/topics/referenda2021/poll211218.json')
                 .then(function (res) {
                     let resVote = res.data.Data
-
                     // console.log(vote)
                     // 票數format
                     let vote_agree = document.querySelectorAll('.agree_vote')
                     let vote_disagree = document.querySelectorAll('.disagree_vote')
-
                     // 票數linechart
                     let bar_agree = document.querySelectorAll('.agree_bar')
                     let bar_disagree = document.querySelectorAll('.disagree_bar')
-
                     for (let i = 0; i < resVote.length; i++) {
                         // api新票數 取代 預設票數值
                         state.votes[i].vote_agree = resVote[i].AgreeTickets
                         state.votes[i].vote_disagree = resVote[i].RejectTickets
-
                         bar_agree[i].style.width = Math.floor((resVote[i].AgreeTickets / state.vote_total) * 100) + '%'
                         bar_disagree[i].style.width =
                             Math.floor((resVote[i].RejectTickets / state.vote_total) * 100) + '%'
-
                         vote_agree[i].innerText =
                             resVote[i].AgreeTickets.toString().replace(/\B(?=(\d{4})+(?!\d))/g, '萬') + ' 票'
                         vote_disagree[i].innerText =
@@ -76,11 +71,15 @@ export default new Vuex.Store({
                 .catch(function (err) {
                     console.log(err)
                 })
-
-            // eslint-disable-next-line no-undef
         },
-        getVote() {},
     },
-    actions: {},
+
+    actions: {
+        // keepVote() {
+        //     setInterval(() => {
+        //         this.vote()
+        //     }, 3000)
+        // },
+    },
     modules: {},
 })

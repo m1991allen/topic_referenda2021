@@ -1640,12 +1640,6 @@ export default {
             `
             }
 
-            // document.querySelector('.hoverText').style.cssText = `
-            //     display: block;
-            //     top: ${top}px;
-            //     left: ${left}px;
-            // `
-
             document.querySelector('.bar_yes').innerHTML = width_y + '%'
             document.querySelector('.bar_no').innerHTML = width_n + '%'
 
@@ -1727,6 +1721,7 @@ export default {
     background-color: #9da8b2;
     display: block;
     height: 20px;
+    width: 0%;
 }
 
 .pass {
