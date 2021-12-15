@@ -1655,6 +1655,7 @@ export default {
         mouseLeave() {
             document.querySelector('.hoverText').style.display = 'none'
         },
+
         vote(state) {
             setTimeout(() => {
                 // 票數format
@@ -1666,9 +1667,21 @@ export default {
                 let bar_disagree = document.querySelectorAll('.result_disagree_bar')
 
                 for (let i = 0; i < state.votes.length; i++) {
-                    bar_agree[i].style.width = Math.floor((vote_agree[i].innerText / state.vote_total) * 100) + '%'
-                    bar_disagree[i].style.width =
-                        Math.floor((vote_disagree[i].innerText / state.vote_total) * 100) + '%'
+                    // 票數判定:同意票
+                    if (vote_agree[i].innerText < 7000000) {
+                        bar_agree[i].style.width = Math.floor((vote_agree[i].innerText / state.vote_total) * 100) + '%'
+                    } else {
+                        bar_agree[i].style.width = 100 + '%'
+                    }
+
+                    // 票數判定:不同意票
+
+                    if (vote_disagree[i].innerText < 7000000) {
+                        bar_disagree[i].style.width =
+                            Math.floor((vote_disagree[i].innerText / state.vote_total) * 100) + '%'
+                    } else {
+                        bar_disagree[i].style.width = 100 + '%'
+                    }
 
                     vote_agree[i].innerText =
                         vote_agree[i].innerText.toString().replace(/\B(?=(\d{4})+(?!\d))/g, '萬') + ' 票'
@@ -1829,7 +1842,8 @@ path {
 
 @media screen and (max-width: 500px) {
     .threshold::after {
-        content: '｜門檻';
+        content: '｜門檻 \10f05a';
+        font-family: 'Font Awesome 5 Duotone';
         font-size: 0.8rem;
         font-weight: bolder;
         position: absolute;

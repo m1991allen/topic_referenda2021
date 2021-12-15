@@ -32,16 +32,3 @@ Vue.use(VueGtag, {
         },
     },
 })
-
-// import Analytics from 'analytics'
-// import googleAnalytics from '@analytics/google-analytics'
-// Analytics
-// const analytics = Analytics({
-//     app: 'App',
-//     plugins: [
-//         googleAnalytics({
-//             trackingId: 'UA-101119806-1',
-//         }),
-//     ],
-// })
-// analytics.page()
