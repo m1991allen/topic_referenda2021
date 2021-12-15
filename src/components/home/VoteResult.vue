@@ -12,6 +12,7 @@
                         </h3>
                         <p class="status">
                             <span :class="{ pass: item.isPass }">同意</span>
+                            <span class="threshold"></span>
                             <span class="result_agree_bar"></span>
                             <span class="result_agree_vote">{{ item.vote_agree }}</span>
                         </p>
@@ -1718,7 +1719,7 @@ export default {
 }
 
 .result_disagree_bar {
-    background-color: #9da8b2;
+    background-color: #eaa200;
     display: block;
     height: 20px;
     width: 0%;
@@ -1736,7 +1737,7 @@ export default {
     font-weight: bolder;
 }
 
-.status span:nth-child(3) {
+.status span:nth-last-child(1) {
     text-align: right;
     display: block;
 }
@@ -1807,5 +1808,34 @@ path {
 
 .bar_no {
     background-color: #9da8b2;
+}
+
+/* 票數門檻樣式 */
+.threshold {
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+.threshold::after {
+    content: '｜門檻 495萬6367票';
+    font-size: 0.8rem;
+    font-weight: bolder;
+    position: absolute;
+    top: -25px;
+    left: 71%;
+    color: maroon;
+}
+
+@media screen and (max-width: 500px) {
+    .threshold::after {
+        content: '｜門檻';
+        font-size: 0.8rem;
+        font-weight: bolder;
+        position: absolute;
+        top: -25px;
+        left: 71%;
+        color: maroon;
+    }
 }
 </style>

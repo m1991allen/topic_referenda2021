@@ -9,6 +9,7 @@
                 </h3>
                 <p class="status">
                     <span :class="{ pass: item.isPass }">同意</span>
+                    <span class="threshold"></span>
                     <span class="agree_bar"></span>
                     <span class="agree_vote"></span>
                 </p>
@@ -89,10 +90,11 @@ h3 span {
     display: block;
     width: 80%;
     height: 20px;
+    position: relative;
 }
 
 .disagree_bar {
-    background-color: #9da8b2;
+    background-color: #eaa200;
     display: block;
     width: 100%;
     height: 20px;
@@ -110,8 +112,25 @@ h3 span {
     font-weight: bolder;
 }
 
-.status span:nth-child(3) {
+.status span:nth-last-child(1) {
     text-align: right;
     display: block;
+}
+
+/* 票數門檻樣式 */
+.threshold {
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+.threshold::after {
+    content: '｜門檻';
+    font-size: 0.8rem;
+    font-weight: bolder;
+    position: absolute;
+    top: -25px;
+    left: 71%;
+    color: maroon;
 }
 </style>

@@ -45,7 +45,7 @@ export default new Vuex.Store({
         vote(state) {
             // eslint-disable-next-line no-undef
             axios
-                .get('https://www.ftvnews.com.tw/topics/referenda2021/poll211218.json')
+                .get('https://melect.ftv.com.tw/ElectApi/elect_ftvnews.json')
                 .then(function (res) {
                     let resVote = res.data.Data
                     // console.log(vote)

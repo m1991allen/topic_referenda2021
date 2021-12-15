@@ -2,8 +2,8 @@
     <div class="home">
         <Banner />
         <div class="inner">
-            <!-- <Voting /> -->
-            <!-- <VoteResult /> -->
+            <Voting />
+            <VoteResult />
             <Tabs />
             <Opinion />
             <Info />
@@ -16,8 +16,8 @@
 
 <script>
 // @ is an alias to /src
-// import Voting from '@/components/home/Voting.vue'
-// import VoteResult from '@/components/home/VoteResult.vue'
+import Voting from '@/components/home/Voting.vue'
+import VoteResult from '@/components/home/VoteResult.vue'
 
 import Banner from '@/components/home/Banner.vue'
 import Tabs from '@/components/home/Tabs.vue'
@@ -30,8 +30,8 @@ import Info from '@/components/home/Info.vue'
 export default {
     name: 'Home',
     components: {
-        // Voting,
-        // VoteResult,
+        Voting,
+        VoteResult,
         Banner,
         Tabs,
         Opinion,
