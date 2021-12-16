@@ -329,7 +329,7 @@ a span {
     min-height: 200px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     .grid {
         grid-template-columns: 1fr;
         grid-gap: 0rem;

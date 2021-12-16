@@ -8,8 +8,9 @@
                     <div>
                         <h3>
                             <span>{{ item.no }}</span>
-                            {{ item.title }}
+                            {{ item.title }} - <span>{{ item.result }}</span>
                         </h3>
+
                         <p class="status">
                             <span :class="{ pass: item.isPass }">同意</span>
                             <span class="threshold"></span>
@@ -1718,11 +1719,15 @@ export default {
     font-size: 1.2rem;
 }
 
-.layout h3 span {
+.layout h3 span:nth-child(1) {
     border: 1px solid #1c4372;
     border-radius: 50%;
     padding: 0.3rem 0.4rem;
     background-color: white;
+}
+
+.layout h3 span:nth-child(2) {
+    color: #c40c0c;
 }
 
 .result_agree_bar {
@@ -1831,25 +1836,20 @@ path {
 }
 
 .threshold::after {
-    content: '｜門檻 495萬6367票';
+    content: '↓門檻：495萬6367票';
     font-size: 0.8rem;
     font-weight: bolder;
     position: absolute;
-    top: -25px;
+    top: -22px;
     left: 71%;
-    color: maroon;
+    color: #c40c0c;
+    white-space: nowrap;
 }
 
 @media screen and (max-width: 500px) {
     .threshold::after {
-        content: '｜門檻 \10f05a';
+        content: '↓門檻';
         font-family: 'Font Awesome 5 Duotone';
-        font-size: 0.8rem;
-        font-weight: bolder;
-        position: absolute;
-        top: -25px;
-        left: 71%;
-        color: maroon;
     }
 }
 </style>

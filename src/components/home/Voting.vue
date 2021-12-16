@@ -1,9 +1,6 @@
 <template>
     <div id="voting" class="voting">
-        <h2 @mousemove="mouseMove()" @mouseleave="mouseLeave()">
-            {{ title }} <i class="fad fa-info-circle"></i
-            ><span class="info" v-show="active">通過門檻：495萬6367票</span>
-        </h2>
+        <h2>{{ title }}</h2>
 
         <div class="layout">
             <div v-for="(item, index) in voting" :key="index">
@@ -12,8 +9,10 @@
                     {{ item.title }}
                 </h3>
                 <p class="status">
-                    <span :class="{ pass: item.isPass }">同意</span>
-                    <span class="threshold"> </span>
+                    <span :class="{ pass: item.isPass }"
+                        >同意<i class="fad fa-lg fa-info-circle" @mouseover="mouseMove" @mouseleave="mouseLeave"></i
+                    ></span>
+                    <span class="threshold"></span>
                     <span class="agree_bar"></span>
                     <span class="agree_vote"></span>
                 </p>
@@ -49,10 +48,31 @@ export default {
         // 門檻
         mouseMove() {
             this.active = true
+            event.path[1].insertAdjacentHTML(
+                'afterend',
+                `<span id="info"
+                        style="position: absolute;
+                        top:30%;
+                        left:0;
+                        max-width: 310px;
+                        z-index: 999;
+                        background-color: #ffffffed;
+                        padding: 1rem 0.6rem;
+                        border-radius: 20px;
+                        box-shadow: 1px 2px 3px #bdbdbd;">
+                通過門檻為：
+                <span style="display: block;">1.同意票高於
+                    <span style="color: #d92828">495萬6367票</span><span>，且</span>
+                </span>
+                <span style="display: block;">2.同意票大於不同意票</span>
+            </span>`
+            )
         },
 
         mouseLeave() {
             this.active = false
+            let info = document.getElementById('info')
+            info.parentNode.removeChild(info)
         },
     },
 
@@ -75,10 +95,18 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     .layout {
         grid-template-columns: 1fr;
     }
+}
+
+.status {
+    position: relative;
+}
+
+.status i {
+    cursor: pointer;
 }
 
 .layout div {
@@ -117,9 +145,11 @@ h3 span {
     0% {
         background-color: #3a7ac8;
     }
+
     50% {
         background-color: #24538c;
     }
+
     100% {
         background-color: #3a7ac8;
     }
@@ -164,17 +194,6 @@ h3 span {
 }
 
 /* 票數門檻樣式 */
-.info {
-    position: absolute;
-    white-space: nowrap;
-    background-color: rgb(211, 211, 211);
-    padding: 1rem 0.5rem;
-    z-index: 999;
-    left: 50%;
-    top: 110%;
-    transform: translateX(-50%);
-    font-size: 1.2rem;
-}
 
 .threshold {
     width: 100%;
@@ -183,13 +202,13 @@ h3 span {
 }
 
 .threshold::after {
-    content: '｜門檻';
+    content: ' ↓門檻';
     font-size: 0.8rem;
     font-weight: bolder;
     position: absolute;
-    top: -25px;
+    top: -22px;
     left: 71%;
-    color: maroon;
+    color: #c40c0c;
     font-family: 'FontAwesome';
     cursor: pointer;
 }

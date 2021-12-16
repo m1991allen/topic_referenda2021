@@ -86,7 +86,7 @@ export default {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     .grid {
         grid-template-columns: 1fr;
     }
@@ -170,7 +170,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     ul {
         grid-template-columns: 1fr 1fr;
     }

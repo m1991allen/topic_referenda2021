@@ -13,6 +13,7 @@ export default new Vuex.Store({
                 vote_disagree: 1000000,
                 isPass: false,
                 noPass: false,
+                result: '未通過',
             },
             {
                 no: '18',
@@ -21,6 +22,7 @@ export default new Vuex.Store({
                 vote_disagree: 2,
                 isPass: false,
                 noPass: false,
+                result: '未通過',
             },
             {
                 no: '19',
@@ -29,6 +31,7 @@ export default new Vuex.Store({
                 vote_disagree: 3,
                 isPass: false,
                 noPass: false,
+                result: '未通過',
             },
             {
                 no: '20',
@@ -37,6 +40,7 @@ export default new Vuex.Store({
                 vote_disagree: 4,
                 isPass: false,
                 noPass: false,
+                result: '未通過',
             },
         ],
         vote_total: 7000000,
