@@ -1,5 +1,6 @@
 <template>
     <div class="info">
+        <h2>{{ title }}</h2>
         <div
             class="infogram-embed"
             data-id="3ee9b552-7b16-4c1b-8bf0-062e3c6d256c"
@@ -24,7 +25,9 @@
 export default {
     name: 'Info',
     data() {
-        return {}
+        return {
+            title: '歷年公投結果',
+        }
     },
 }
 </script>
