@@ -32,7 +32,7 @@ module.exports = {
             .end()
         config.resolve.alias.set('@@', path.resolve(__dirname)) // @@ 代替根目錄
         config.plugin('html').tap((args) => {
-            args[0].title = '【四大公投】｜專題｜民視新聞網'
+            args[0].title = '【四大公投】1218公投開票、即時新聞一次看｜民視數位專題｜資訊懶人包'
             console.log(args[0])
             return args
         })

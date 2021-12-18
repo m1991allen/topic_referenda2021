@@ -1,7 +1,13 @@
 <template>
     <div id="voting" class="voting">
         <h2>{{ title }}</h2>
-
+        <p style="background-color: #e9e7e7; padding: 1rem">
+            通過門檻為：
+            <span style="display: block"
+                >1.同意票高於 <span style="color: #d92828">495萬6367票</span><span>，且</span>
+            </span>
+            <span style="display: block">2.同意票大於不同意票</span>
+        </p>
         <div class="layout">
             <div v-for="(item, index) in voting" :key="index">
                 <h3>
@@ -10,12 +16,19 @@
                 </h3>
                 <p class="status">
                     <span :class="{ pass: item.isPass }"
-                        >同意<i class="fad fa-lg fa-info-circle" @mouseover="mouseMove" @mouseleave="mouseLeave"></i
+                        >同意<i
+                            class="fad fa-lg fa-info-circle"
+                            @touchstart="showInfo"
+                            @touchend="hideInfo"
+                            @mouseover="showInfo"
+                            @mouseleave="hideInfo"
+                        ></i
                     ></span>
                     <span class="threshold"></span>
                     <span class="agree_bar"></span>
                     <span class="agree_vote"></span>
                 </p>
+
                 <hr />
                 <p class="status">
                     <span :class="{ pass: item.noPass }">不同意</span>
@@ -46,8 +59,9 @@ export default {
         },
 
         // 門檻
-        mouseMove() {
+        showInfo() {
             this.active = true
+            event.preventDefault()
             event.path[1].insertAdjacentHTML(
                 'afterend',
                 `<span id="info"
@@ -67,9 +81,17 @@ export default {
                 <span style="display: block;">2.同意票大於不同意票</span>
             </span>`
             )
+
+            // if (this.active == true) {
+            //     setTimeout(function () {
+            //         this.active = false
+            //         let info = document.getElementById('info')
+            //         info.parentNode.removeChild(info)
+            //     }, 6000)
+            // }
         },
 
-        mouseLeave() {
+        hideInfo() {
             this.active = false
             let info = document.getElementById('info')
             info.parentNode.removeChild(info)
@@ -94,6 +116,11 @@ export default {
 .layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    touch-action: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 @media screen and (max-width: 500px) {
     .layout {
@@ -118,7 +145,6 @@ export default {
 
 h2 {
     position: relative;
-    cursor: pointer;
 }
 
 h3 {
@@ -135,7 +161,7 @@ h3 span {
 .agree_bar {
     background-color: #1c4372;
     display: block;
-    width: 80%;
+    /* width: 80%; */
     height: 20px;
     position: relative;
     animation: progress1 infinite 1s;
@@ -156,22 +182,22 @@ h3 span {
 }
 
 .disagree_bar {
-    background-color: #eaa200;
+    background-color: #e4bf50;
     display: block;
-    width: 100%;
+    /* width: 100%; */
     height: 20px;
     animation: progress2 infinite 1s;
 }
 
 @keyframes progress2 {
     0% {
-        background-color: #eaa200;
+        background-color: #e4bf50;
     }
     50% {
-        background-color: #ffbf29;
+        background-color: #ffb710;
     }
     100% {
-        background-color: #eaa200;
+        background-color: #e4bf50;
     }
 }
 
@@ -210,6 +236,6 @@ h3 span {
     left: 71%;
     color: #c40c0c;
     font-family: 'FontAwesome';
-    cursor: pointer;
+    letter-spacing: 0px;
 }
 </style>

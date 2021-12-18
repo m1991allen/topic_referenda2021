@@ -1120,476 +1120,476 @@ export default {
             // 票數17案：重啟核四
             vote_area17: [
                 {
-                    city: '台北市',
-                    agree: 40000000,
-                    disagree: 60000000,
+                    city: '臺北市',
+                    agree: 514232,
+                    disagree: 490692,
                 },
                 {
                     city: '新北市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 692987,
+                    disagree: 749776,
                 },
                 {
                     city: '基隆市',
-                    agree: 40123,
-                    disagree: 601235,
+                    agree: 69196,
+                    disagree: 59630,
                 },
 
                 {
                     city: '桃園市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 382314,
+                    disagree: 359049,
                 },
                 {
                     city: '新竹市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 81447,
+                    disagree: 73524,
                 },
                 {
                     city: '新竹縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 108925,
+                    disagree: 69185,
                 },
                 {
                     city: '苗栗縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 104362,
+                    disagree: 65496,
                 },
 
                 {
-                    city: '台中市',
-                    agree: 40,
-                    disagree: 60,
+                    city: '臺中市',
+                    agree: 474423,
+                    disagree: 500786,
                 },
                 {
                     city: '彰化縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 184623,
+                    disagree: 205667,
                 },
                 {
                     city: '南投縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 82471,
+                    disagree: 73365,
                 },
 
                 {
                     city: '雲林縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 83626,
+                    disagree: 117498,
                 },
                 {
                     city: '嘉義市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 39901,
+                    disagree: 52308,
                 },
                 {
                     city: '嘉義縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 60905,
+                    disagree: 103035,
                 },
                 {
-                    city: '台南市',
-                    agree: 40,
-                    disagree: 60,
+                    city: '臺南市',
+                    agree: 232541,
+                    disagree: 415776,
                 },
                 {
                     city: '高雄市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 388792,
+                    disagree: 597826,
                 },
                 {
                     city: '屏東縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 109130,
+                    disagree: 169165,
                 },
 
                 {
                     city: '宜蘭縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 54104,
+                    disagree: 91426,
                 },
                 {
                     city: '花蓮縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 66929,
+                    disagree: 30851,
                 },
                 {
-                    city: '台東縣',
-                    agree: 40,
-                    disagree: 60,
+                    city: '臺東縣',
+                    agree: 38284,
+                    disagree: 20545,
                 },
 
                 {
                     city: '金門縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 19817,
+                    disagree: 3283,
                 },
                 {
                     city: '連江縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 2634,
+                    disagree: 459,
                 },
                 {
                     city: '澎湖縣',
-                    agree: 403,
-                    disagree: 60,
+                    agree: 13112,
+                    disagree: 13109,
                 },
             ],
 
             // 票數18案：返來豬進口
             vote_area18: [
                 {
-                    city: '台北市',
-                    agree: 1,
-                    disagree: 2,
+                    city: '臺北市',
+                    agree: 533890,
+                    disagree: 472147,
                 },
                 {
                     city: '新北市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 725556,
+                    disagree: 717589,
                 },
                 {
                     city: '基隆市',
-                    agree: 40123,
-                    disagree: 601235,
+                    agree: 72735,
+                    disagree: 56209,
                 },
 
                 {
                     city: '桃園市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 393423,
+                    disagree: 347962,
                 },
                 {
                     city: '新竹市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 84140,
+                    disagree: 70800,
                 },
                 {
                     city: '新竹縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 111253,
+                    disagree: 66859,
                 },
                 {
                     city: '苗栗縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 106512,
+                    disagree: 63291,
                 },
 
                 {
-                    city: '台中市',
-                    agree: 40,
-                    disagree: 60,
+                    city: '臺中市',
+                    agree: 484612,
+                    disagree: 490521,
                 },
                 {
                     city: '彰化縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 190279,
+                    disagree: 199905,
                 },
                 {
                     city: '南投縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 84903,
+                    disagree: 70911,
                 },
 
                 {
                     city: '雲林縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 87535,
+                    disagree: 113430,
                 },
                 {
                     city: '嘉義市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 41488,
+                    disagree: 50748,
                 },
                 {
                     city: '嘉義縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 63301,
+                    disagree: 100587,
                 },
                 {
-                    city: '台南市',
-                    agree: 40,
-                    disagree: 60,
+                    city: '臺南市',
+                    agree: 241186,
+                    disagree: 406976,
                 },
                 {
                     city: '高雄市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 397990,
+                    disagree: 588302,
                 },
                 {
                     city: '屏東縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 112053,
+                    disagree: 166133,
                 },
 
                 {
                     city: '宜蘭縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 61292,
+                    disagree: 84199,
                 },
                 {
                     city: '花蓮縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 68395,
+                    disagree: 29381,
                 },
                 {
-                    city: '台東縣',
-                    agree: 40,
-                    disagree: 60,
+                    city: '臺東縣',
+                    agree: 39175,
+                    disagree: 19679,
                 },
 
                 {
                     city: '金門縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 20343,
+                    disagree: 2770,
                 },
                 {
                     city: '連江縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 2676,
+                    disagree: 402,
                 },
                 {
                     city: '澎湖縣',
-                    agree: 403,
-                    disagree: 60,
+                    agree: 13817,
+                    disagree: 12402,
                 },
             ],
 
             // 票數19案：公投綁大選
             vote_area19: [
                 {
-                    city: '台北市',
-                    agree: 123,
-                    disagree: 123,
+                    city: '臺北市',
+                    agree: 539747,
+                    disagree: 466022,
                 },
                 {
                     city: '新北市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 730574,
+                    disagree: 713486,
                 },
                 {
                     city: '基隆市',
-                    agree: 40123,
-                    disagree: 601235,
+                    agree: 72786,
+                    disagree: 56252,
                 },
 
                 {
                     city: '桃園市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 394314,
+                    disagree: 347671,
                 },
                 {
                     city: '新竹市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 85746,
+                    disagree: 69314,
                 },
                 {
                     city: '新竹縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 112428,
+                    disagree: 65810,
                 },
                 {
                     city: '苗栗縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 106243,
+                    disagree: 63712,
                 },
 
                 {
-                    city: '台中市',
-                    agree: 40,
-                    disagree: 60,
+                    city: '臺中市',
+                    agree: 488644,
+                    disagree: 487288,
                 },
                 {
                     city: '彰化縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 190195,
+                    disagree: 200254,
                 },
                 {
                     city: '南投縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 84360,
+                    disagree: 71533,
                 },
 
                 {
                     city: '雲林縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 86539,
+                    disagree: 114564,
                 },
                 {
                     city: '嘉義市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 41437,
+                    disagree: 50804,
                 },
                 {
                     city: '嘉義縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 62465,
+                    disagree: 101456,
                 },
                 {
-                    city: '台南市',
-                    agree: 40,
-                    disagree: 60,
+                    city: '臺南市',
+                    agree: 243004,
+                    disagree: 405495,
                 },
                 {
                     city: '高雄市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 398261,
+                    disagree: 588579,
                 },
                 {
                     city: '屏東縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 111215,
+                    disagree: 167117,
                 },
 
                 {
                     city: '宜蘭縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 60498,
+                    disagree: 85043,
                 },
                 {
                     city: '花蓮縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 68191,
+                    disagree: 29596,
                 },
                 {
-                    city: '台東縣',
-                    agree: 40,
-                    disagree: 60,
+                    city: '臺東縣',
+                    agree: 38963,
+                    disagree: 19862,
                 },
 
                 {
                     city: '金門縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 20027,
+                    disagree: 3100,
                 },
                 {
                     city: '連江縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 2676,
+                    disagree: 413,
                 },
                 {
                     city: '澎湖縣',
-                    agree: 403,
-                    disagree: 60,
+                    agree: 13569,
+                    disagree: 12667,
                 },
             ],
 
             // 票數20案：三接遷離
             vote_area20: [
                 {
-                    city: '台北市',
-                    agree: 100,
-                    disagree: 600,
+                    city: '臺北市',
+                    agree: 532642,
+                    disagree: 472227,
                 },
                 {
                     city: '新北市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 721259,
+                    disagree: 721067,
                 },
                 {
                     city: '基隆市',
-                    agree: 40123,
-                    disagree: 601235,
+                    agree: 72023,
+                    disagree: 56894,
                 },
 
                 {
                     city: '桃園市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 395529,
+                    disagree: 346119,
                 },
                 {
                     city: '新竹市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 83443,
+                    disagree: 71252,
                 },
                 {
                     city: '新竹縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 110309,
+                    disagree: 67754,
                 },
                 {
                     city: '苗栗縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 105241,
+                    disagree: 64595,
                 },
 
                 {
-                    city: '台中市',
-                    agree: 40,
-                    disagree: 60,
+                    city: '臺中市',
+                    agree: 476279,
+                    disagree: 498457,
                 },
                 {
                     city: '彰化縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 187142,
+                    disagree: 202982,
                 },
                 {
                     city: '南投縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 83498,
+                    disagree: 72287,
                 },
 
                 {
                     city: '雲林縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 85518,
+                    disagree: 115517,
                 },
                 {
                     city: '嘉義市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 40681,
+                    disagree: 51500,
                 },
                 {
                     city: '嘉義縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 61715,
+                    disagree: 102073,
                 },
                 {
-                    city: '台南市',
-                    agree: 40,
-                    disagree: 60,
+                    city: '臺南市',
+                    agree: 237964,
+                    disagree: 409890,
                 },
                 {
                     city: '高雄市',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 392910,
+                    disagree: 593239,
                 },
                 {
                     city: '屏東縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 111353,
+                    disagree: 166851,
                 },
 
                 {
                     city: '宜蘭縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 60169,
+                    disagree: 85262,
                 },
                 {
                     city: '花蓮縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 68013,
+                    disagree: 29749,
                 },
                 {
-                    city: '台東縣',
-                    agree: 40,
-                    disagree: 60,
+                    city: '臺東縣',
+                    agree: 38957,
+                    disagree: 19854,
                 },
 
                 {
                     city: '金門縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 20187,
+                    disagree: 2934,
                 },
                 {
                     city: '連江縣',
-                    agree: 40,
-                    disagree: 60,
+                    agree: 2686,
+                    disagree: 399,
                 },
                 {
                     city: '澎湖縣',
-                    agree: 403,
-                    disagree: 60,
+                    agree: 13653,
+                    disagree: 12562,
                 },
             ],
         }
@@ -1737,7 +1737,7 @@ export default {
 }
 
 .result_disagree_bar {
-    background-color: #eaa200;
+    background-color: #e4bf50;
     display: block;
     height: 20px;
     width: 0%;
@@ -1767,7 +1767,7 @@ export default {
 }
 
 .def {
-    fill: #9da8b2;
+    fill: #e4bf50;
     stroke: #fff;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -1825,7 +1825,7 @@ path {
 }
 
 .bar_no {
-    background-color: #9da8b2;
+    background-color: #e4bf50;
 }
 
 /* 票數門檻樣式 */

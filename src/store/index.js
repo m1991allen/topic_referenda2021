@@ -92,11 +92,11 @@ export default new Vuex.Store({
     },
 
     actions: {
-        keepVote() {
-            setInterval(() => {
-                this.vote()
-            }, 15000)
-        },
+        // keepVote() {
+        //     setInterval(() => {
+        //         this.vote()
+        //     }, 15000)
+        // },
     },
     modules: {},
 })
