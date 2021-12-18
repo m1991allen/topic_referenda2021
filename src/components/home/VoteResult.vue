@@ -1835,7 +1835,7 @@ path {
     display: block;
 }
 
-.threshold::after {
+/* .threshold::after {
     content: '↓門檻：495萬6367票';
     font-size: 0.8rem;
     font-weight: bolder;
@@ -1851,5 +1851,5 @@ path {
         content: '↓門檻';
         font-family: 'Font Awesome 5 Duotone';
     }
-}
+} */
 </style>

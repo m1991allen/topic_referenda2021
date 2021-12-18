@@ -227,7 +227,7 @@ h3 span {
     display: block;
 }
 
-.threshold::after {
+/* .threshold::after {
     content: ' ↓門檻';
     font-size: 0.8rem;
     font-weight: bolder;
@@ -237,5 +237,5 @@ h3 span {
     color: #c40c0c;
     font-family: 'FontAwesome';
     letter-spacing: 0px;
-}
+} */
 </style>
