@@ -1,5 +1,5 @@
 <template>
-    <div id="voting" class="voting">
+    <div id="voting" class="voting" v-show="active">
         <h2>{{ title }}</h2>
         <p style="background-color: #e9e7e7; padding: 1rem">
             通過門檻為：
@@ -55,7 +55,7 @@ export default {
         keepVoting() {
             setInterval(() => {
                 this.$store.commit('vote')
-            }, 30000)
+            }, 15000)
         },
 
         // 門檻
@@ -107,7 +107,7 @@ export default {
 
     mounted() {
         this.$store.commit('vote')
-        this.keepVoting()
+        // this.keepVoting()
     },
 }
 </script>

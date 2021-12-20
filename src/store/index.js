@@ -9,8 +9,8 @@ export default new Vuex.Store({
             {
                 no: '17',
                 title: '重啟核四',
-                vote_agree: 100010,
-                vote_disagree: 1000000,
+                vote_agree: 1,
+                vote_disagree: 1,
                 isPass: false,
                 noPass: false,
                 result: '未通過',
@@ -91,12 +91,6 @@ export default new Vuex.Store({
         },
     },
 
-    actions: {
-        // keepVote() {
-        //     setInterval(() => {
-        //         this.vote()
-        //     }, 15000)
-        // },
-    },
+    actions: {},
     modules: {},
 })
