@@ -4,11 +4,11 @@
         <div class="inner">
             <Voting />
             <VoteResult />
-            <Video />
             <Tabs />
             <Opinion />
             <Info />
             <!-- <Poll /> -->
+            <Video />
             <News />
         </div>
     </div>
