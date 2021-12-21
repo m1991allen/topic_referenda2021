@@ -52,11 +52,11 @@ export default {
 
     methods: {
         // 每30秒要求一次票數更新
-        // keepVoting() {
-        //     setInterval(() => {
-        //         this.$store.commit('vote')
-        //     }, 15000)
-        // },
+        keepVoting() {
+            setInterval(() => {
+                this.$store.commit('vote')
+            }, 15000)
+        },
 
         // 門檻
         showInfo() {
